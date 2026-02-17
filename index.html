@@ -19,14 +19,14 @@ html{
     scroll-behavior:smooth;
 }
 
-/* FUNDO GRADIENTE ROXO → BRANCO */
+/* FUNDO GRADIENTE */
 body{
     background: linear-gradient(
         to bottom,
-        #140a2e 0%,
-        #3a1c71 25%,
-        #6a5acd 45%,
-        #dcdcff 75%,
+        #1a0f3c 0%,
+        #3a1c71 20%,
+        #6a5acd 40%,
+        #dcdcff 70%,
         #ffffff 100%
     );
     color:#111;
@@ -40,13 +40,13 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background:rgba(0,0,0,0.2);
-    backdrop-filter: blur(8px);
+    background:rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
 }
 
 nav a{
     text-decoration:none;
-    margin-left:25px;
+    margin-left:20px;
     color:white;
     font-weight:500;
 }
@@ -106,4 +106,88 @@ h2{
 }
 
 .card{
-    background:white
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:40px;
+    background:#ffffff;
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+    <div><strong style="color:white;">Marketing Digital</strong></div>
+    <div>
+        <a href="#inicio">Início</a>
+        <a href="#trabalho">Trabalho</a>
+        <a href="#sobre">Sobre</a>
+    </div>
+</nav>
+
+<section class="hero" id="inicio">
+    <div class="hero-text">
+        <h1>Ingrid Vilharba</h1>
+        <p>Especialista em Marketing Digital focada em estratégia, performance e crescimento digital.</p>
+
+        <div class="badges">
+            <span>Estratégia</span>
+            <span>Branding</span>
+            <span>Performance</span>
+            <span>Tech + Marketing</span>
+        </div>
+    </div>
+
+    <img src="https://via.placeholder.com/250" 
+         alt="Sua Foto" 
+         style="width:250px;border-radius:20px;">
+</section>
+
+<section id="trabalho">
+    <h2>Meu Trabalho</h2>
+    <p>Cada projeto une estratégia, criatividade e dados para gerar resultados reais.</p>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Show Hits</h3>
+            <p>Estratégia digital e posicionamento.</p>
+        </div>
+
+        <div class="card">
+            <h3>Landing Page</h3>
+            <p>Funil de conversão e captação.</p>
+        </div>
+
+        <div class="card">
+            <h3>Campanha Ads</h3>
+            <p>Performance e análise de métricas.</p>
+        </div>
+    </div>
+</section>
+
+<section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>
+        Profissional com experiência em marketing estratégico, branding, campanhas digitais e análise de dados.
+        Trabalho unindo criatividade e tecnologia para construir marcas sólidas e gerar crescimento real.
+    </p>
+</section>
+
+<footer>
+    © 2026 Ingrid Vilharba
+</footer>
+
+</body>
+</html>
